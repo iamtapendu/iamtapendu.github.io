@@ -1,0 +1,41 @@
+    *{
+        font-family: 'Josefin Sans', sans-serif;
+        background-color:#001121;  /*#2c0030*/
+    }
+    img {
+        border: 3px solid #ddd;
+        padding: 5px;
+        margin: 1px;
+        width: 200px;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .content {
+        padding-left: 100px;
+        padding-right: 100px;
+        color:#f1f1f1; 
+        background-color: #001121; 
+        font-size: 20px;
+    }
+    .sec{
+        padding-top: 5px;
+        text-transform: capitalize;
+    }
+    .head{
+        padding-top: 30px;
+        font-weight: 900;
+        font-size: 48px;
+    }
+    .high {
+      font-size: 32px;
+      padding-left: 50px;
+      padding-top: 15px;
+    }
+    .btn-big {
+      font-size: 28px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
