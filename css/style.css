@@ -2,20 +2,13 @@
         font-family: 'Josefin Sans', sans-serif;
         background-color:#001121;  /*#2c0030*/
     }
-    img {
+    .pimg {
         border: 3px solid #ffbf00;
         padding: 5px;
         margin: 1px;
         width: 200px;
     }
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
     .content {
-        padding-left: 100px;
-        padding-right: 100px;
         color:#f1f1f1; 
         background-color: #001121; 
         font-size: 20px;
@@ -31,11 +24,11 @@
     }
     .high {
       font-size: 32px;
-      padding-left: 50px;
+      padding-left: 5%;
       padding-top: 15px;
     }
     .btn-big {
       font-size: 28px;
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-left: 5%;
+      padding-right: 5%;
     }
