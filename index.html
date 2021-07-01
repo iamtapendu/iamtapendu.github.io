@@ -65,7 +65,7 @@
           <img class="img-fluid rounded-circle pimg" src="image/profilePhoto.jpg " alt="Author">
         </div>
         <div class="col-10">
-          <h1 class=" display-2" style="font-weight: 900;padding-top: 50px;">Tapendu Karmakar</h1>
+          <h1 class=" display-1" style="font-weight: 900;padding-top: 50px;">Tapendu Karmakar</h1>
         </div>
       </div>
       <div class="row" style="padding-left: 18%;">
@@ -98,7 +98,7 @@
     </li>
   </ul>
 </nav>
-<section class="content">
+<section class=" container-fluid content">
 
   <h4 id="about" class="text-success head">About</h4>
   <div class="sec" style="padding-left: 5%;">I am Tapendu Karmakar and I'm final year BCA undergrad from 
@@ -109,8 +109,36 @@
   </div>
     
   <h4 id="education" class="text-success head" >Education</h4>
-  <div class="sec">
-    <h6 class="text-info font-weight-bold high">Graduation</h6>
+  <div class="card-columns sec" style="padding-left: 5%;padding-right: 5%;">
+
+    <!--Graduation-->
+    <div class="card" style="background-color:#001121;border:2px solid #fff;">
+      <img class="card-img-top" src="image/grad.png" alt="Card image">
+      <div class="card-body text-center">
+        <h4 class="card-title font-weight-bolder">Graduation</h4>
+        <button type="button" class="btn btn-warning text-white" data-toggle="modal" data-target="#bca">Details</button>
+      </div>    
+    </div>
+
+    <!--Higher Secondary-->
+    <div class="card" style="background-color:#001121;border:2px solid #fff;">
+      <img class="card-img-top" src="image/high-s.png" alt="Card image">
+      <div class="card-body text-center">
+        <h4 class="card-title font-weight-bolder">Higher Secondary</h4>
+        <button type="button" class="btn btn-warning text-white" data-toggle="modal" data-target="#cls-12">Details</button>
+      </div>    
+    </div>
+
+    <!--Secondary-->
+    <div class="card" style="background-color:#001121;border:2px solid #fff;">
+      <img class="card-img-top" src="image/high.png" alt="Card image">
+      <div class="card-body text-center">
+        <h4 class="card-title font-weight-bolder">Secondary</h4>
+        <button type="button" class="btn btn-warning text-white" data-toggle="modal" data-target="#cls-10">Details</button>
+      </div>    
+    </div>
+    
+    <!--h6 class="text-info font-weight-bold high">Graduation</h6>
     <ul style="padding-left: 10%;">
         <li><span class="text-warning">Course : </span>Bachelors Computer Application</li>
         <li><span class="text-warning">College : </span>Michael Madhusudhan Memorial College</li>
@@ -132,75 +160,147 @@
         <li><span class="text-warning">Board : </span>West Bengal Board of Secondary Education</li>
         <li><span class="text-warning">Year Of Passing : </span>2016 </li>
         <li><span class="text-warning">Score : </span>74.71 % </li>
-    </ul>
+    </ul-->
   </div>
 
   <h4 id="projects" class="text-success head">Projects</h4>
-  <div class="sec">
+  <div class="sec card-deck" style="padding-left:5%;padding-right: 5%;">
 
-    <h6 class="text-warning font-weight-bold high">Face Mask Detector | Python | 4 Weeks</h6>
-    <div class="text-capitalize" style="padding-left: 10%;">
-      Detecting people who are not wearing mask properly in real-time video
-      streams. The Face Mask Detection System is fast, accurate, and convenient to use.<br>
-      <button type="button" class="btn btn-warning text-white" data-toggle="modal" data-target="#fmd">Details</button>
-      <a href="https://github.com/iamtapendu/Face-Mask-Detector" class="btn btn-primary" target="_blank">View Source Code</a>
+    <!--Face mask Detector-->
+    <div class="card" style="background-color:#001121;border:2px solid #fff;">
+      <img class="card-img-top" src="image/mask.png" alt="Card image">
+      <div class="card-body text-center">
+        <h4 class="card-title font-weight-bolder">Face Mask Detector</h4>
+        <button type="button" class="btn btn-warning text-white" data-toggle="modal" data-target="#fmd">Details</button>
+        <a href="https://github.com/iamtapendu/Face-Mask-Detector" class="btn btn-primary" target="_blank">View Source Code</a>
+      </div>    
     </div>
 
-    <h6 class="text-warning font-weight-bold high">Pocket Camera | Python | 1 Weeks</h6>
-    <div class="text-capitalize" style="padding-left: 10%;">
-      It can Recoding Video from laptop Camera and you can know what FPS it taking the video and also take screenshot during video
-      recording, you can also pause video.<br>
-      <button type="button" class="btn btn-warning text-white" data-toggle="modal" data-target="#pc">Details</button>
-      <a href="https://github.com/iamtapendu/Pocket-Camera" class="btn btn-primary" target="_blank">View Source Code</a>
+    <!--Pocket camera-->
+    <div class="card" style="background-color:#001121;border:2px solid #fff;">
+      <img class="card-img-top" src="image/cam.png" alt="Card image">
+      <div class="card-body text-center">
+        <h4 class="card-title font-weight-bolder">Pocket Camera</h4>
+        <button type="button" class="btn btn-warning text-white" data-toggle="modal" data-target="#pc">Details</button>
+        <a href="https://github.com/iamtapendu/Pocket-Camera" class="btn btn-primary" target="_blank">View Source Code</a>
+      </div>    
     </div>
 
-    <h6 class="text-warning font-weight-bold high">College Management System | C++ | 4 Weeks</h6>
-    <div class="text-capitalize" style="padding-left: 10%;">
-      College Management System deals with all kinds of student and staff details, insertion, updation, deletion of records
-      and other resource related details to.<br>
-      <button type="button" class="btn btn-warning text-white" data-toggle="modal" data-target="#cms">Details</button>
+    <!--College Management System-->
+    <div class="card" style="background-color:#001121;border:2px solid #fff;">
+      <img class="card-img-top" src="image/mng.png" alt="Card image">
+      <div class="card-body text-center">
+        <h4 class="card-title font-weight-bolder">College Management System</h4>
+        <button type="button" class="btn btn-warning text-white" data-toggle="modal" data-target="#cms">Details</button>
       <a href="https://github.com/iamtapendu/college-management-system" class="btn btn-primary" target="_blank">View Source Code</a>
+      </div>    
     </div>
   </div>
 
   <h4 id="skills" class="text-success head">Skills</h4>
   <div class="sec">
 
-    <h6 class="text-info font-weight-bold high">Language & Databases known</h6>
-    <div class="text-capitalize" style="padding-left: 10%;">
-      <button class="btn btn-primary btn-big m-2">C</button> 
-      <button class="btn btn-success btn-big m-2">C++</button>
-      <button class="btn btn-light btn-big m-2">C#</button>  
-      <button class="btn btn-danger btn-big m-2">Java</button>  
-      <button class="btn btn-warning btn-big text-white m-2 ">Python</button>
-      <button class="btn btn-secondary btn-big m-2">MySQL</button>
-      <button class="btn btn-success btn-big m-2">HTML5</button> 
-      <button class="btn btn-primary btn-big m-2">CSS</button> 
+    <h6 class="text-warning font-weight-bold high">Language & Databases known</h6>
+    <div class=" card-deck" style="padding-left: 5%;padding-right: 5%;">
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="C">
+        <img class="card-img-top" src="image/c.png" alt="Card image">
+      </div>
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="C++">
+        <img class="card-img-top" src="image/c++.png" alt="Card image">
+      </div>
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="C Sharp">
+        <img class="card-img-top" src="image/csh.png" alt="Card image">
+      </div>
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="Java">
+        <img class="card-img-top" src="image/java.png" alt="Card image">
+      </div>
+
+      <div class="card"  style="background-color:#001121;border:2px solid #fff;" data-toggle="tooltip" title="Python">
+        <img class="card-img-top" src="image/python.png" alt="Card image">
+      </div>
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;" data-toggle="tooltip" title="MySQL">
+        <img class="card-img-top" src="image/mySQL.png" alt="Card image">
+      </div>
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;" data-toggle="tooltip" title="HTML 5">
+        <img class="card-img-top" src="image/html5.png" alt="Card image">
+      </div>
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip"  title="CSS">
+        <img class="card-img-top" src="image/css.png" alt="Card image">
+      </div>
+      
     </div>
 
-    <h6 class="text-info font-weight-bold high">Libraries known</h6>
-    <div class="text-capitalize" style="padding-left: 10%">
-      <button class="btn btn-primary btn-big m-2">NumPy</button> 
-      <button class="btn btn-warning text-white btn-big m-2">Pandas</button>
-      <button class="btn btn-danger btn-big m-2">Matplotlib</button>  
-      <button class="btn btn-primary btn-big m-2">Scikit Learn</button> 
-      <button class="btn btn-light btn-big m-2">Seaborn</button>  
-      <button class="btn btn-success btn-big m-2 ">OpenCV</button>  
-    </div>
+    <h6 class="text-warning font-weight-bold high">Frameworks and Libraries known</h6>
+    <div class=" card-deck" style="padding-left: 5%;padding-right: 5%;">
 
-    <h6 class="text-info font-weight-bold high">Framework known</h6>
-    <div class="text-capitalize" style="padding-left: 10%;">
-      <button class="btn btn-warning text-white btn-big m-2">Tensorflow</button> 
-      <button class="btn btn-danger btn-big m-2">Keras</button> 
-    </div>
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="NumPy">
+        <img class="card-img-top" src="image/numpy.png" alt="Card image">
+      </div>
 
-    <h6 class="text-info font-weight-bold high">Tools known</h6>
-    <div class="text-capitalize" style="padding-left: 10%;">
-      <button class="btn btn-primary btn-big m-2">Git</button>
-      <button class="btn btn-danger btn-big m-2">Jupiter Notebook</button> 
-      <button class="btn btn-success btn-big m-2">PyCharm IDE</button> 
-      <button class="btn btn-dark btn-big m-2">Eclipse</button>
-      <button class="btn btn-light btn-big m-2">Visual Studio Code</button> 
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="Pandas">
+        <img class="card-img-top" src="image/pandas.png" alt="Card image">
+      </div>
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="Matplotlib">
+        <img class="card-img-top" src="image/mat.png" alt="Card image">
+      </div>
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="Scikit Learn">
+        <img class="card-img-top" src="image/scikit.png" alt="Card image">
+      </div>
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="Seaborn">
+        <img class="card-img-top" src="image/seaborn.png" alt="Card image">
+      </div>
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="OpenCV">
+        <img class="card-img-top" src="image/opencv.png" alt="Card image">
+      </div>
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="Tensorflow">
+        <img class="card-img-top" src="image/tf.png" alt="Card image">
+      </div>
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="Keras">
+        <img class="card-img-top" src="image/keras.png" alt="Card image">
+      </div>
+
+     </div>
+
+    <h6 class="text-warning font-weight-bold high">Tools known</h6>
+    <div class=" card-deck" style="padding-left: 5%;padding-right: 5%;">
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="GitHub">
+        <img class="card-img-top" src="image/git.png" alt="Card image">
+      </div>
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="Jupiter Notebook">
+        <img class="card-img-top" src="image/jupiter.png" alt="Card image">
+      </div>
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="PyCharm">
+        <img class="card-img-top" src="image/pycharm.png" alt="Card image">
+      </div>
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="Eclipse">
+        <img class="card-img-top" src="image/eclipse.png" alt="Card image">
+      </div>
+
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="Visual Code Studio">
+        <img class="card-img-top" src="image/vsc.png" alt="Card image">
+      </div>
+      
+      <div class="card" style="background-color:#001121;border:2px solid #fff;"data-toggle="tooltip" title="Code Blocks">
+        <img class="card-img-top" src="image/cbs.png" alt="Card image">
+      </div>
+
     </div>
 
   </div>
@@ -215,11 +315,16 @@
     tape100kamar@gmail.com<br>
 
     <i class="fab fa-github high" style="font-size: 42px;padding-right: 5%;"></i>
-    <a href="https://github.com/iamtapendu" target="_blank">@iamtapendu</a><br>
+    <a href="https://github.com/iamtapendu" target="_blank">github.com/iamtapendu</a><br>
+
+    <i class="fab fa-kaggle high" style="font-size: 42px;padding-right: 5%;"></i>
+    <a href="https://kaggle.com/iamtapendu" target="_blank">kaggle.com/iamtapendu</a><br>
+
 
     <i class="fab fa-linkedin high" style="font-size: 42px;padding-right: 5%;"></i>
     <a href="https://www.linkedin.com/in/tapendu-karmakar-7887481a0?trk=people-guest_people_search-card" target="_blank">
     @iamtapendu</a><br>
+
 
     <i class="fas fa-map-marker-alt high" style="font-size: 42px;padding-right: 5%;" ></i> 
     Near Petrol Pump, Barjora, Bankura, West Bengal, India. <br> 
@@ -228,7 +333,7 @@
   </div>
 </section>
 
-<section class="row bg-dark content sec text-white">
+<section class="container-fluid row bg-dark text-white">
   <div class="col-6 bg-dark">
   <span class=" bg-dark far fa-copyright"> 2021 Tapendu Karmakar. All Rights Reserved. </span>
   </div>
@@ -236,6 +341,90 @@
   <span class="bg-dark">Last Update : 20-06-2021</span>
   </div>
 </section>
+
+<!-- The Modal for Graduation -->
+<div class="modal fade" id="bca">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h1 class="modal-title text-primary head">Graduation</h1>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body text-white" style="font-size: 20px;">
+        <span class="text-warning">Course : </span>Bachelors Computer Application (BCA)<br>
+        <span class="text-warning">College : </span>Michael Madhusudhan Memorial College<br>
+        <span class="text-warning">University : </span>Kazi Nazrul University<br>
+        <span class="text-warning">Duration : </span>Jul 2018 - Present<br>
+        <span class="text-warning">Score : </span>8.95 / 10<br>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal for Higher Secondary -->
+<div class="modal fade" id="cls-12">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h1 class="modal-title text-primary head">Class XII</h1>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body text-white" style="font-size: 20px;">
+        <span class="text-warning">Stream : </span>Science Stream<br>
+        <span class="text-warning">School : </span>Barjora High School<br>
+        <span class="text-warning">Board : </span>West Bengal Council of Higher Secondary Education<br>
+        <span class="text-warning">Year Of Passing : </span>2018 <br>
+        <span class="text-warning">Score : </span>83.2 % <br>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal for Secondary -->
+<div class="modal fade" id="cls-10">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h1 class="modal-title text-primary head">Class X</h1>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body text-white" style="font-size: 20px;">
+        <span class="text-warning">School : </span>Barjora High School<br>
+        <span class="text-warning">Board : </span>West Bengal Board of Secondary Education<br>
+        <span class="text-warning">Year Of Passing : </span>2016 <br>
+        <span class="text-warning">Score : </span>74.71 % <br>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- The Modal for Face Mask Detection -->
 <div class="modal fade" id="fmd">
@@ -250,6 +439,8 @@
 
       <!-- Modal body -->
       <div class="modal-body text-white" style="font-size: 20px;">
+        Detecting people who are not wearing mask properly in real-time video streams.
+        The Face Mask Detection System is fast, accurate, and convenient to use.<br>
         <span class="text-warning">Language Used : </span>Python<br>
         <span class="text-warning">Library & Framework Used : </span>Tensorflow, OpenCV, NumPy, TKinter & Pillow<br>
         <span class="text-warning">Tools Used : </span>PyCharm IDE & Jupiter Notebook<br>
@@ -280,6 +471,8 @@
 
       <!-- Modal body -->
       <div class="modal-body text-white" style="font-size: 20px;">
+        It can Recoding Video from laptop Camera and you can know what FPS it taking the video 
+        and also take screenshot during video recording, you can also pause video.<br>
         <span class="text-warning">Language Used : </span>Python<br>
         <span class="text-warning">Library & Framework Used : </span>OpenCV, NumPy, TKinter & Pillow<br>
         <span class="text-warning">Tools Used : </span>PyCharm IDE <br>
@@ -308,6 +501,8 @@
 
       <!-- Modal body -->
       <div class="modal-body text-white" style="font-size: 20px;">
+        College Management System deals with all kinds of student and staff details, insertion, updation,
+        deletion of records and other resource related details to.<br>
         <span class="text-warning">Language Used : </span>C++<br>
         <span class="text-warning">Tools Used : </span>Visual Studio Code<br>
         <span class="text-warning">Operating System Used : </span>Ubuntu 20.04.2 LTS<br>
@@ -322,7 +517,18 @@
   </div>
 </div>
 
-<script>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/typed.min.js"></script>
+<script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["Smart","Intelligent","Quick Learner","Coder","Programmer","Devoloper","AI Enthusiast"],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+
     window.onscroll = function() {myFunction()};
     
     var navbar = document.getElementById("navbar");
@@ -335,18 +541,10 @@
         navbar.classList.remove("fixed-top");
       }
     }
+
+    $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
 </script>
-<script src="js/typed.min.js"></script>
-<script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Smart","Intelligent","Quick Learner","Coder","Programmer","Devoloper","AI Enthusiast"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
